@@ -1,51 +1,33 @@
-# I-RISE 2026 & 7th CUK Innovation Week Showcase
+# I-RISE 2026
 
-> **Theme**: *“Youth-Led Solutions for a Sustainable and Inclusive Nation: Where Ideas Rise to Impact”*  
-> **Dates**: 8–9 October 2026  
-> **Host**: The Co-operative University of Kenya (CUK), Karen, Nairobi  
-> **Inspiration**: [MKSu Hackfest 2026](https://www.mksuhackfest2026.dev/)
+Official web showcase for the inaugural Interuniversity Research & Innovation Student Expo (I-RISE) and the 7th CUK Innovation Week held at The Co-operative University of Kenya.
 
-A modern, high-performance, single-page web application built with **React**, **Vite**, and **Tailwind CSS**, recapping the concluded inaugural Interuniversity Research & Innovation Student Expo (I-RISE) and the 7th CUK Innovation Week.
+Theme: *"Youth-Led Solutions for a Sustainable and Inclusive Nation: Where Ideas Rise to Impact"*
 
----
+## Overview
 
-## 🚀 Features
+- **Category Winners**: Highlights the top-ranked student innovations across 6 thematic competition tracks.
+- **Projects Directory**: Complete directory of all 45 participating innovation projects across 8 universities, filterable by track and searchable in real time.
+- **Event Gallery**: Direct links to official Google Drive archives for Day 1 and Day 2 photographs.
+- **Participating Institutions & Partners**: Recognizes student delegations from 8 public and private Kenyan universities alongside host and industry partners.
 
-- **Podium Champions & Grand Winners**: Highlights the 5 top-performing teams (Argus, Routeshield, Neonatus Childcare, The Digital Landlord, and Campus Link) with an interactive celebratory confetti blast.
-- **Complete Project Directory (45 Projects)**: Searchable and filterable database of all 45 participating innovation projects across all 6 thematic tracks with scores and category winner indicators.
-- **Day 1 & Day 2 Interactive Photo Gallery**:
-  - Filterable by **All**, **Day 1 (8 Oct)**, and **Day 2 (9 Oct)**, as well as category tags (Pitching, Finals, Awards, Jury, Ceremony, Exhibition, Partners, Networking).
-  - Built-in **Full-screen Lightbox Modal** with keyboard navigation (arrows, escape).
-  - Direct links to the official Google Drive archive preserving 80+ high-resolution photos.
-- **Two-Day Chronological Schedule**: Interactive timeline tab switcher for Day 1 and Day 2 events, keynotes, breakout pitching rooms, and awards.
-- **Participating Universities**: Cards showcasing the 8 partner universities (CUK, KU, CUEA, MUT, MMU, St. Paul's, Karatina, Kaimosi Friends).
-- **Official Certificate & Feedback Portal**: Direct call-to-action for all student innovators to claim their certificates via Google Forms.
-- **Sponsors & Leadership**: Recognition of CUK, SISCOM Technologies, Epic Academy, {fata} Kenya, Drift Plus Adventures, Drew Marketing Solutions, Kodes, Generation X Technologies, and CUK Innovation Club.
+## Tech Stack
 
----
+- React 19
+- Vite
+- Tailwind CSS v4
+- React Router
+- Lucide React
 
-## 🛠️ Tech Stack
-
-- **Framework**: React 19
-- **Bundler & Dev Server**: Vite 6+
-- **Styling**: Tailwind CSS v4
-- **Icons**: Lucide React
-- **Celebration Effects**: Canvas Confetti
-
----
-
-## 🏃 Quick Start
+## Getting Started
 
 ```bash
 # Install dependencies
 npm install
 
-# Start Vite dev server
+# Start local development server
 npm run dev
 
 # Build for production
 npm run build
-
-# Preview production build
-npm run preview
 ```
