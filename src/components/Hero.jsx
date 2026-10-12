@@ -1,13 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   Images,
   Trophy,
-  ExternalLink,
   ArrowRight,
-  Layers,
-  Award
 } from "lucide-react";
-import { eventMeta, keyStats } from "../data/iriseData";
+import { keyStats } from "../data/iriseData";
 
 export default function Hero() {
   const scrollTo = (id) => {
@@ -59,42 +57,30 @@ export default function Hero() {
           </p>
 
           {/* Action Button Strip */}
-          <div className="flex flex-wrap items-center justify-center gap-2.5 sm:gap-3.5 mb-12 sm:mb-16 px-2">
+          <div className="flex flex-wrap items-center justify-center gap-3 mb-12 sm:mb-16 px-2">
+            <Link
+              to="/projects"
+              className="inline-flex items-center space-x-2 px-5 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs sm:text-sm transition-colors cursor-pointer"
+            >
+              <span>Explore All 45 Projects</span>
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+
+            <button
+              onClick={() => scrollTo("winners")}
+              className="inline-flex items-center space-x-2 px-5 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-100 border border-slate-800 hover:border-slate-700 font-semibold text-xs sm:text-sm transition-colors cursor-pointer"
+            >
+              <Trophy className="w-4 h-4 text-emerald-400" />
+              <span>Category Winners</span>
+            </button>
+
             <button
               onClick={() => scrollTo("gallery")}
-              className="inline-flex items-center space-x-2 px-4 py-2.5 sm:px-5 sm:py-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs sm:text-sm transition-colors cursor-pointer"
+              className="inline-flex items-center space-x-2 px-5 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-100 border border-slate-800 hover:border-slate-700 font-semibold text-xs sm:text-sm transition-colors cursor-pointer"
             >
-              <Images className="w-4 h-4" />
+              <Images className="w-4 h-4 text-cyan-400" />
               <span>Event Gallery</span>
-              <ArrowRight className="w-4 h-4" />
             </button>
-
-            <button
-              onClick={() => scrollTo("tracks")}
-              className="inline-flex items-center space-x-2 px-4 py-2.5 sm:px-5 sm:py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-100 border border-slate-800 hover:border-slate-700 font-semibold text-xs sm:text-sm transition-colors cursor-pointer"
-            >
-              <Layers className="w-4 h-4 text-emerald-400" />
-              <span>Explore Projects</span>
-            </button>
-
-            <button
-              onClick={() => scrollTo("champions")}
-              className="inline-flex items-center space-x-2 px-4 py-2.5 sm:px-5 sm:py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-100 border border-slate-800 hover:border-slate-700 font-semibold text-xs sm:text-sm transition-colors cursor-pointer"
-            >
-              <Trophy className="w-4 h-4 text-amber-400" />
-              <span>Podium Champions</span>
-            </button>
-
-            <a
-              href={eventMeta.certificateFormUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center space-x-2 px-4 py-2.5 sm:px-5 sm:py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-800 font-semibold text-xs sm:text-sm transition-colors"
-            >
-              <Award className="w-4 h-4 text-emerald-400" />
-              <span>Claim Certificate</span>
-              <ExternalLink className="w-3.5 h-3.5 opacity-60" />
-            </a>
           </div>
         </div>
 

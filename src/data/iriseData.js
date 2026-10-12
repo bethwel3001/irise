@@ -82,6 +82,55 @@ export const grandChampions = [
   },
 ];
 
+export const categoryWinners = [
+  {
+    track: "Cybersecurity, Ethical AI & LegalTech",
+    team: "Argus",
+    score: 74.00,
+    institution: "The Co-operative University of Kenya",
+    description: "Intelligent threat intelligence surveillance and ethical national security cybersecurity system.",
+    honor: "Best Overall Grand Champion",
+  },
+  {
+    track: "HealthTech & Inclusive Design",
+    team: "Neonatus Childcare",
+    score: 79.67,
+    institution: "The Catholic University of Eastern Africa",
+    description: "Inclusive digital health monitoring system for maternal and neonatal welfare.",
+    honor: "Champion Female Innovator",
+  },
+  {
+    track: "Smart Mobility & Clean Energy",
+    team: "Routeshield",
+    score: 70.00,
+    institution: "Murang'a University of Technology",
+    description: "Advanced vehicular security and intelligent transit safety management platform.",
+    honor: "Champion Male Innovator",
+  },
+  {
+    track: "FinTech & Inclusive Economies",
+    team: "The Digital Landlord",
+    score: 87.00,
+    institution: "The Co-operative University of Kenya",
+    description: "Automated real estate financial ledger and lease management ecosystem streamlining rental liquidity.",
+    honor: "Highest Pitch Score (87.00 pts)",
+  },
+  {
+    track: "AgriTech & Climate",
+    team: "Pinacare",
+    score: 85.33,
+    institution: "The Co-operative University of Kenya",
+    description: "Intelligent pineapple waste recycling and organic processing value chain system.",
+  },
+  {
+    track: "Education & Governance",
+    team: "Sekani AI",
+    score: 81.00,
+    institution: "Multimedia University of Kenya",
+    description: "Adaptive pedagogy and AI-powered curriculum engine personalized for higher learning.",
+  },
+];
+
 export const participatingInstitutions = [
   { name: "The Co-operative University of Kenya", code: "CUK", role: "Host & Main Sponsor", city: "Nairobi (Karen)", badge: "Host" },
   { name: "Kenyatta University", code: "KU", role: "Partner University", city: "Nairobi", badge: "Partner" },

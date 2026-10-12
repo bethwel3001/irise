@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   ArrowUp,
   Mail,
@@ -54,34 +55,34 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 text-xs text-slate-400">
               <li>
-                <a href="#champions" className="hover:text-emerald-400 transition-colors">
-                  Podium Champions
-                </a>
-              </li>
-              <li>
-                <a href="#about" className="hover:text-emerald-400 transition-colors">
+                <Link to="/#about" className="hover:text-emerald-400 transition-colors">
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#institutions" className="hover:text-emerald-400 transition-colors">
+                <Link to="/#winners" className="hover:text-emerald-400 transition-colors">
+                  Category Winners
+                </Link>
+              </li>
+              <li>
+                <Link to="/projects" className="hover:text-emerald-400 transition-colors">
+                  All 45 Projects Directory
+                </Link>
+              </li>
+              <li>
+                <Link to="/#institutions" className="hover:text-emerald-400 transition-colors">
                   Participating Universities
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#tracks" className="hover:text-emerald-400 transition-colors">
-                  Thematic Tracks & 45 Projects
-                </a>
-              </li>
-              <li>
-                <a href="#gallery" className="hover:text-emerald-400 transition-colors">
+                <Link to="/#gallery" className="hover:text-emerald-400 transition-colors">
                   Photo Archive
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#partners" className="hover:text-emerald-400 transition-colors">
+                <Link to="/#partners" className="hover:text-emerald-400 transition-colors">
                   Sponsors & Partners
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -110,7 +111,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="hover:text-emerald-400 transition-colors flex items-center space-x-1"
                 >
-                  <span>Master Google Drive Archive</span>
+                  <span>Google Drive Archive</span>
                   <ExternalLink className="w-3 h-3" />
                 </a>
               </li>
